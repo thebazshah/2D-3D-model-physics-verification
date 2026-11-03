@@ -1,0 +1,32 @@
+{
+  "name": "2d-3d-model-physics-verification",
+  "version": "1.0.0",
+  "description": "Claude / Agent Skill for verifying 2D and 3D models, skeletal rigs, and animations against laws of classical mechanics, human biomechanics, animal locomotion, and vehicle dynamics.",
+  "type": "module",
+  "main": "./scripts/verify_physics.ts",
+  "exports": {
+    ".": "./scripts/verify_physics.ts"
+  },
+  "bin": {
+    "verify-physics": "./scripts/verify_physics.ts"
+  },
+  "scripts": {
+    "test": "node scripts/verify_physics.ts examples/sample_motions.json || true",
+    "test:example": "node examples/verify_threejs_example.ts",
+    "test:py": "python3 scripts/verify_physics.py examples/sample_motions.json || true"
+  },
+  "keywords": [
+    "claude-skill",
+    "agent-skill",
+    "physics-verification",
+    "biomechanics",
+    "3d-animation",
+    "2d-animation",
+    "threejs",
+    "gltf",
+    "bvh",
+    "vehicle-dynamics",
+    "locomotion"
+  ],
+  "license": "MIT"
+}
